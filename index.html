@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>freecodecamp.org survery project</title>
+</head>
+
+<body>
+
+        <h1 id="title">Bookworm Survey</h1>
+        <p class="" id="description">Reading/book habit and preference survey.</p>
+
+    <div id="main-container">
+
+        <form id="survey-form">
+
+            <div class="user-info">
+                <label for="name" id="name-label"> Name:
+                    <input type="text" name="name" id="name" placeholder="Enter name here." required>
+                </label>
+
+                <label for="email" id="email-label"> Email:
+                    <input type="email" name="email" id="email" placeholder="Enter email here" required>
+                </label>
+
+                <label for="age" id="number-label"> Let us know your age:
+                    <input type="number" name="age" id="number" placeholder="Age" min="13" max="120" required>
+                </label>
+
+            </div>
+
+
+
+            <div class="selector">
+                <div class="question">Do you prefer to read classics or modern books?</div>
+                <select name="" id="dropdown">
+                    <option value="modern">Modern</option>
+                    <option value="classics">Classics</option>
+                </select>
+            </div>
+
+
+            <div>
+                <p class="question">How many books are on your current TBR list?</p>
+                <label for="tenplus">
+                    <input type="radio" name="tbr" id="tenplus" value="10"> 10+
+                </label>
+                <label for="twentyplus">
+                    <input type="radio" name="tbr" id="twentyplus" value="20"> 20+
+                </label>
+                <label for="thirtyplus">
+                    <input type="radio" name="tbr" id="thirtyplus" value="30"> 30+
+                </label>
+                <label for="fortyplus">
+                    <input type="radio" name="tbr" id="fortyplus" value="40"> 40+
+                </label>
+                <label for="no-idea">
+                    <input type="radio" name="tbr" id="no-idea" value="10" value="idk"> Lost count in 2001!
+                </label>
+            </div>
+
+
+            <div>
+                <p class="question">How do you pick the next book you want to read?</p>
+                <label for="booktok">
+                    <input type="checkbox" name="moodpicks" id="booktok" value="booktok">
+                    Booktok
+                </label>
+                <label for="bookstagram">
+                    <input type="checkbox" name="moodpicks" id="bookstagram" value="bookstagram">
+                    Bookstagram
+                </label>
+                <label for="friends-fam">
+                    <input type="checkbox" name="moodpicks" id="friends-fam" value="friends-fam">
+                    Friends & Family
+                </label>
+                <label for="gr">
+                    <input type="checkbox" name="moodpicks" id="gr" value="gr">
+                    Goodreads
+                </label>
+            </div>
+
+
+
+
+
+
+
+
+            <div>
+                <p class="question">Do you have a favorite quote from any of the books you read?</p>
+                <textarea name="qoutes" id="fave-qoute" cols="30" rows="10">
+                </textarea>
+            </div>
+
+            <button id="submit"> - Submit -</button>
+        </form>
+    </div>
+</body>
+
+</html>
